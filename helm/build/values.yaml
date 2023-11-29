@@ -1,0 +1,15 @@
+app:
+  name: kblase-poi-gateway-app
+  namespace: kblase
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/kblase-gateway
+  org: rhdh23-lab
+  name: kblase-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: kblase/poi-gateway-app
+  tag: latest
